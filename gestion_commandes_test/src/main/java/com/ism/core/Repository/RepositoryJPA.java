@@ -16,7 +16,7 @@ public class RepositoryJPA<T extends Identifiable> implements Repository<T> {
     public RepositoryJPA(Class<T> type) {
         this.type = type;
         if (em == null) {
-            this.emf = Persistence.createEntityManagerFactory("POSTGRESQLDETTES");
+            this.emf = Persistence.createEntityManagerFactory("POSTGRESQLCOMMANDES");
             this.em = emf.createEntityManager(); 
         } else {
             this.em = em; 
