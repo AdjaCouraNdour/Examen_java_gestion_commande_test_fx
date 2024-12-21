@@ -1,0 +1,28 @@
+/* style.css */
+
+/* Fond de la fenêtre */
+.root {
+    -fx-background-color: #9a0429; /* Couleur burgundy */
+}
+
+/* Couleurs des champs de texte */
+.text-field, .password-field {
+    -fx-background-color: white; /* Couleur blanche pour les champs */
+    -fx-border-color: #ccc; /* Bordure grise */
+    -fx-border-radius: 5px; /* Coins arrondis */
+}
+
+/* Bouton avec une teinte plus foncée */
+.button {
+    -fx-background-color: #9a0429; /* Couleur burgundy plus foncée */
+    -fx-text-fill: white; /* Couleur du texte en blanc */
+    -fx-padding: 10px 20px; /* Padding du bouton */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-background-radius: 5px; /* Coins arrondis pour le bouton */
+}
+
+/* Styles des labels */
+.label {
+    -fx-text-fill: white; /* Couleur du texte des labels en blanc */
+}
+

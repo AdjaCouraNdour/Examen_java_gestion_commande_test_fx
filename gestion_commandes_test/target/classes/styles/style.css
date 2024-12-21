@@ -1,0 +1,35 @@
+/* TableView Styling */
+.table-view {
+    -fx-border-radius: 5px;
+    -fx-background-color: #f8e6e6; /* Couleur de fond de l'intérieur du tableau */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0, 2, 2);
+}
+
+/* En-tête de la table */
+.table-view .column-header-background {
+    -fx-background-color: #680320; /* Couleur de fond de l'en-tête */
+
+}
+
+/* Styles pour les en-têtes de colonnes */
+.table-view .column-header .label {
+    -fx-background-color: #680320; /* En-tête de couleur rouge */
+    -fx-text-fill: white; /* Texte blanc pour l'en-tête */
+    -fx-font-weight: bold; /* Texte en gras pour l'en-tête */
+    -fx-alignment: center; /* Centrer le texte dans l'en-tête */
+}
+.table-view .column-header, 
+.table-view .table-cell {
+    -fx-border-color: #f8e6e6; /* Séparation en couleur #f8e6e6 */
+    -fx-border-style: solid;
+    -fx-border-width: 0 1px 0 0; /* Bordure droite pour chaque colonne */
+}
+
+/* Style des cellules */
+.table-view .table-cell {
+    -fx-background-color: #f8e6e6; /* Fond des cellules */
+    -fx-padding: 5px;
+    -fx-alignment: center; /* Aligner le texte à gauche */
+    -fx-border-width: 0; /* Pas de bordure entre les cellules */
+}
+

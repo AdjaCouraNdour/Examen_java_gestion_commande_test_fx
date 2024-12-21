@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="contentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="451.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ism.controllers.CommandeListController">
+   <children>
+      <TableView fx:id="tabview" layoutX="42.0" layoutY="63.0" prefHeight="200.0" prefWidth="368.0" style="-fx-border-radius: 5px;">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="montant" prefWidth="95.0" text="Montant" />
+            <TableColumn fx:id="montantRestant" prefWidth="108.0" text="montant Restant" />
+            <TableColumn fx:id="typeCommande" prefWidth="89.0" text="Status" />
+         </columns>
+      </TableView>
+      <Label layoutX="149.0" layoutY="21.0" text="Lister les Commandes">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="340.0" layoutY="22.0" mnemonicParsing="false" onAction="#addCommande" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: #680320;" text="Ajouter" textFill="#faf8f8">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="contentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="432.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ism.controllers.PaiementController">
+   <children>
+      
+      <Pane layoutX="64.0" layoutY="43.0" prefHeight="266.0" prefWidth="306.0" style="-fx-background-color: f8e6e6;">
+         <children>
+            <Label layoutX="22.0" layoutY="63.0" text="Sélectionnez une dette :" />
+            <ComboBox fx:id="detteComboBox" layoutX="21.0" layoutY="84.0" prefHeight="25.0" prefWidth="262.0" style="-fx-background-color: white;" />
+            <Button fx:id="createPaiementButton" layoutX="191.0" layoutY="226.0" onAction="#createPaiement" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #680320;" text="Enregistrer" textFill="WHITE" />
+            <DatePicker fx:id="dateField" layoutX="21.0" layoutY="132.0" prefHeight="25.0" prefWidth="262.0" />
+            <Label layoutX="22.0" layoutY="113.0" text="Date de paiement :" />
+            <TextField fx:id="montantField" layoutX="22.0" layoutY="179.0" prefHeight="25.0" prefWidth="262.0" />
+            <Label layoutX="22.0" layoutY="158.0" text="Montant :" />
+            <Label layoutX="23.0" layoutY="14.0" text="Sélectionnez le client :" />
+            <ComboBox fx:id="clientComboBox" layoutX="22.0" layoutY="35.0" prefHeight="25.0" prefWidth="262.0" style="-fx-background-color: white;" />
+         </children>
+      </Pane>
+
+      <TextArea fx:id="outputArea" editable="false" layoutY="322.0" prefHeight="39.0" prefWidth="433.0" promptText="Messages de sortie..." />
+      
+      <Label layoutX="152.0" layoutY="8.0" text="Faire une Dette" textFill="#900026">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

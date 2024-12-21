@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ism.controllers.MenuController">
+   <children>
+      <!-- Barre de navigation -->
+      <Pane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="167.0" style="-fx-background-color: #680320;">
+         <children>
+            <Button layoutX="33.0" layoutY="61.0" mnemonicParsing="false" onAction="#listClient" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: white;" text="Clients" />
+            <Button layoutX="33.0" layoutY="102.0" mnemonicParsing="false" onAction="#listProduit" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: white;" text="Produits" />
+            <Button layoutX="34.0" layoutY="143.0" mnemonicParsing="false" onAction="#listCommande" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: white;" text="Commandes" />
+            <Label layoutX="10.0" layoutY="9.0" text="Gestion Boutique" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+
+      <!-- Barre supérieure -->
+      <Pane layoutX="166.0" layoutY="0.0" prefHeight="51.0" prefWidth="434.0" style="-fx-background-color: #680320;">
+         <children>
+            <Button layoutX="345.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="15.0" prefWidth="78.0" style="-fx-background-color: white;" text="Logout" textFill="#830000" />
+         </children>
+      </Pane>
+
+      <!-- Contenu principal dynamique -->
+      <VBox layoutX="166.0" layoutY="51.0" prefHeight="349.0" prefWidth="434.0" fx:id="contentPane">
+         <!-- Le contenu sera chargé dynamiquement ici -->
+      </VBox>
+   </children>
+</Pane>
